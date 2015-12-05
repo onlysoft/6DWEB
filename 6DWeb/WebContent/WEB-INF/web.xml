@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>6DWeb</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<filter>
+		<filter-name>CharacterFilter</filter-name>
+		<filter-class>cn.onlysoft.web.filter.CharacterFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!--servlet是指编写的Servlet的路径，以及定义别名 -->
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>cn.onlysoft.web.servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<!--servlet-mapping是指根据别名，定义访问方式 -->
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/servlet/register</url-pattern>
+	</servlet-mapping>
+
+	<!--servlet是指编写的Servlet的路径，以及定义别名 -->
+	<servlet>
+		<servlet-name>DoRegisterServlet</servlet-name>
+		<servlet-class>cn.onlysoft.web.servlet.DoRegisterServlet</servlet-class>
+	</servlet>
+	<!--servlet-mapping是指根据别名，定义访问方式 -->
+	<servlet-mapping>
+		<servlet-name>DoRegisterServlet</servlet-name>
+		<url-pattern>/servlet/doRegister</url-pattern>
+	</servlet-mapping>
+
+	<!--servlet是指编写的Servlet的路径，以及定义别名 -->
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>cn.onlysoft.web.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<!--servlet-mapping是指根据别名，定义访问方式 -->
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/servlet/login</url-pattern>
+	</servlet-mapping>
+	<!--servlet是指编写的Servlet的路径，以及定义别名 -->
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>cn.onlysoft.web.servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<!--servlet-mapping是指根据别名，定义访问方式 -->
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/servlet/logout</url-pattern>
+	</servlet-mapping>
+	<!--servlet是指编写的Servlet的路径，以及定义别名 -->
+	<servlet>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>cn.onlysoft.web.servlet.UploadServlet</servlet-class>
+	</servlet>
+	<!--servlet-mapping是指根据别名，定义访问方式 -->
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/servlet/uploadServlet</url-pattern>
+	</servlet-mapping>
+	<!--servlet是指编写的Servlet的路径，以及定义别名 -->
+	<servlet>
+		<servlet-name>FileListServlet</servlet-name>
+		<servlet-class>cn.onlysoft.web.servlet.FileListServlet</servlet-class>
+	</servlet>
+	<!--servlet-mapping是指根据别名，定义访问方式 -->
+	<servlet-mapping>
+		<servlet-name>FileListServlet</servlet-name>
+		<url-pattern>/servlet/ListServlet</url-pattern>
+	</servlet-mapping>
+	<!--servlet是指编写的Servlet的路径，以及定义别名 -->
+	<servlet>
+		<servlet-name>GetUpdateServlet</servlet-name>
+		<servlet-class>cn.onlysoft.web.servlet.GetUpdateServlet</servlet-class>
+	</servlet>
+	<!--servlet-mapping是指根据别名，定义访问方式 -->
+	<servlet-mapping>
+		<servlet-name>GetUpdateServlet</servlet-name>
+		<url-pattern>/servlet/updateServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!--servlet是指编写的Servlet的路径，以及定义别名 -->
+	<servlet>
+		<servlet-name>UserManagerServlet</servlet-name>
+		<servlet-class>cn.onlysoft.web.servlet.UserManagerServlet</servlet-class>
+	</servlet>
+	<!--servlet-mapping是指根据别名，定义访问方式 -->
+	<servlet-mapping>
+		<servlet-name>UserManagerServlet</servlet-name>
+		<url-pattern>/servlet/managerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!--servlet是指编写的Servlet的路径，以及定义别名 -->
+	<servlet>
+		<servlet-name>ActiveServlet</servlet-name>
+		<servlet-class>cn.onlysoft.web.servlet.ActiveServlet</servlet-class>
+	</servlet>
+	<!--servlet-mapping是指根据别名，定义访问方式 -->
+	<servlet-mapping>
+		<servlet-name>ActiveServlet</servlet-name>
+		<url-pattern>/servlet/activeServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!--servlet是指编写的Servlet的路径，以及定义别名 -->
+	<servlet>
+		<servlet-name>PassWordServlet</servlet-name>
+		<servlet-class>cn.onlysoft.web.servlet.PassWordServlet</servlet-class>
+	</servlet>
+	<!--servlet-mapping是指根据别名，定义访问方式 -->
+	<servlet-mapping>
+		<servlet-name>PassWordServlet</servlet-name>
+		<url-pattern>/servlet/passwordServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!--servlet是指编写的Servlet的路径，以及定义别名 -->
+	<servlet>
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>cn.onlysoft.web.servlet.DeleteServlet</servlet-class>
+	</servlet>
+	<!--servlet-mapping是指根据别名，定义访问方式 -->
+	<servlet-mapping>
+		<servlet-name>DeleteServlet</servlet-name>
+		<url-pattern>/servlet/deleteServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
